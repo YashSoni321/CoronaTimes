@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>CoronaTimes</title>
+    <style>
+      .change-content:after {
+        content: "";
+        animation: changetext 10s infinite linear;
+        color: rgb(255, 4, 4);
+      }
+      @keyframes changetext {
+        0% {
+          content: "United States";
+        }
+        9% {
+          content: "Brazil";
+        }
+        18% {
+          content: "Russia";
+        }
+        27% {
+          content: "Spain";
+        }
+        36% {
+          content: "United Kingdom";
+        }
+        45% {
+          content: "Italy";
+        }
+        54% {
+          content: "India";
+        }
+        63% {
+          content: "Germeny";
+        }
+        72% {
+          content: "Peru";
+        }
+        81% {
+          content: "Turkey";
+        }
+        90% {
+          content: "Iran";
+        }
+        100% {
+          content: "France";
+        }
+      }
+      .responsive {
+        height: 100%;
+        width: 100%;
+      }
+
+      .heading {
+        margin-top: 70px;
+        text-align: center;
+      }
+      .container {
+        height: 50px;
+        margin-top: 50px;
+      }
+      .btn {
+        border: 2px black solid;
+        background-color: black;
+        color: rgb(243, 243, 243);
+      }
+      .btn:hover {
+        border: 2px black solid;
+        background-color: rgb(253, 253, 253);
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">CoronaTimes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About-us.html">About-us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sign-in.html">Sign-in</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Countries
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">India</a>
+              <a class="dropdown-item" href="#">Italy</a>
+              <a class="dropdown-item" href="#">America</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Donate Us</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <hr />
+
+    <div>
+      <main class="heading">
+        <h2>
+          Top 12 Countries which suffers from Corona virus
+          <span class="change-content"></span>
+        </h2>
+      </main>
+    </div>
+
+    <div class="card-deck">
+      <div class="card border-primary mb-3 my-4 mx-4">
+        <img src="us.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">United States</h5>
+          <p class="card-text">
+            United States | Total coronavirus cases: 1,965,708 | Total coronavirus deaths: 111,390 | Total recovered cases: 738,646 
+          </p>
+          <a href="us.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#usModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 my-4 mx-4">
+        <img src="brazil.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Brazil</h5>
+          <p class="card-text">
+            Brazil | Total coronavirus cases: 646,006 | Total coronavirus deaths: 35,047 | Total recovered cases:302,084
+          </p>
+          <a href="brazil.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#brazilModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 my-4 mx-4">
+        <img src="russia.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Russia</h5>
+          <p class="card-text">
+            Russia | Total coronavirus cases: 449,834 | Total coronavirus deaths: 5,528 | Total recovered cases: 212,680 
+          </p>
+          <a href="russia.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#russiaModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="usModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="usModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="uspic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="russiaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="russiaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="brazilpic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="brazilModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="brazilModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="brazilpic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck">
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="spain.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Spain</h5>
+          <p class="card-text">
+            Spain | Total coronavirus cases: 288,058 | Total coronavirus deaths: 27,134| Total recovered cases: N/A 
+          </p>
+          <a href="spain.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#spainModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="uk.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">United Kingdom</h5>
+          <p class="card-text">
+            United Kingdom| Total coronavirus cases: 283,311| Total coronavirus deaths: 40,261| Total recovered cases: N/A .
+          </p>
+          <a href="uk.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#ukModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="italy.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Italy</h5>
+          <p class="card-text">
+            Italy | Total coronavirus cases: 234,531 | Total coronavirus deaths: 33,774| Total recovered cases:163,781
+          </p>
+          <a href="italy.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#italyModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="italyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="italyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="italypic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="spainModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="spainModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="spainpic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ukModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ukModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="ukpic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck">
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="india.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">India</h5>
+          <p class="card-text">
+            India | Total coronavirus cases: 236,184 | Total coronavirus deaths: 6,649| Total recovered cases: 113,233
+          </p>
+          <a href="india.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#indiaModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="germany.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Germany</h5>
+          <p class="card-text">
+            Germany | Total coronavirus cases: 185,414 | Total coronavirus deaths: 8,763| Total recovered cases:168,500
+          </p>
+          <a href="germany.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#germanyModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="peru.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Peru</h5>
+          <p class="card-text">
+            Peru | Total coronavirus cases: 187,400 | Total coronavirus deaths: 5,162| Total recovered cases: 79,214 
+          </p>
+          <a href="peru.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#peruModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="indiaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="indiaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="indiapic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="germanyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="germanyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="germanypic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="peruModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="peruModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="perupic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck">
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="turkey.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Turkey</h5>
+          <p class="card-text">
+            Turkey | Total coronavirus cases: 168,340 | Total coronavirus deaths: 4,648| Total recovered cases:
+133,400
+          </p>
+          <a href="" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#turkeyModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="iran.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Iran</h5>
+          <p class="card-text">
+            Iran | Total coronavirus cases: 167,156 | Total coronavirus deaths: 8,134 | Total recovered cases: 129,741
+          </p>
+          <a href="iran.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#iranModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-primary mb-3 mx-4 my-4">
+        <img src="france.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">France</h5>
+          <p class="card-text">
+            France | Total coronavirus cases: 153,055 | Total coronavirus deaths: 29,111| Total recovered cases: 70,504|
+          </p>
+          <a href="france.html" class="btn">View details</a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#franceModal"
+            type="submit"
+          >
+            View Map
+          </button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="turkeyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="turkeyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="turkeypic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="iranModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="iranModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="iranpic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="franceModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="franceModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infection Rate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="francepic.jpg" alt="" class="responsive" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          This is © CoronaTimes which shows some facts about Corona virus &nbsp;
+          &nbsp;
+<hr>
+          <a href="About-us.html" class="btn">Visit our Team</a>&nbsp;
+          <a href="Donate-us.html" class="btn">Donate us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
